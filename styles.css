@@ -1,0 +1,41 @@
+/* // color palette #CE6A6C  #EBADA1  #BED3C3 #4B919E #222F53 */
+
+body {
+  background-color: #4B919E;
+  color: #EBADA1;
+}
+p {
+  color: #222F53;
+}
+h1, h2, h3 {
+  color: #222F53;
+}
+li {
+  font-size: 16pt;
+}
+ol {
+  font-family: courier;
+}
+ul {
+  font-family: arial;
+}
+a {
+  margin-right: 20pt;
+  margin-left: 20pt;
+}
+img {
+  height: 250pt;
+  width: 300pt;
+}
+li>div {
+  display: none;
+}
+li:hover>div {
+  display: inline-block;
+}
+a:hover {
+  color: #BED3C3;
+}
+li:hover {
+  color: #BED3C3;
+}

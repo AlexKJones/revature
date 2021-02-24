@@ -1,0 +1,34 @@
+/* // color palette #CE6A6C  #EBADA1  #BED3C3 #4B919E #222F53 */
+
+body {
+  background-color: #4B919E;
+  color: #EBADA1;
+}
+p {
+  color: #222F53;
+}
+h1, h2, h3 {
+  color: #222F53;
+}
+a:hover {
+  color: #CE6A6C;
+}
+li:hover {
+  color: #BED3C3;
+}
+.left {
+  float: left;
+  width: 20%;
+}
+li {
+  font-size: 16pt;
+  padding-bottom: 8pt;
+}
+.right {
+  float: right;
+  width: 20%
+  font-size: 12pt;
+}
+a {
+  color: #EBADA1
+}

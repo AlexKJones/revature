@@ -39,3 +39,6 @@ a:hover {
 li:hover {
   color: #BED3C3;
 }
+div.column {
+  width: 50%;
+}

@@ -30,7 +30,10 @@ than the size.*/
 Create an array called groceries. 
 Assign it some grocery items. 
 Then create a loop that prints each item out.*/
-
+let groceries = ['chocolate', 'fruit', 'veggies']
+for (let i=0; i<groceries.length; i++){
+  console.log(groceries[i])
+}
 
 
 /*Your turn 
@@ -38,3 +41,9 @@ Take the below array of integers and iterate
 over it. Check if each element is an even number 
 and if so, print the index of that element.*/
 let numbers = [1, 2, 5, 10, 12, 16, 21, 35, 47, 52];
+console.log(numbers)
+for (let i=0; i<numbers.length; i++){
+  if (numbers[i] % 2 === 0){
+    console.log('numbers index ' + (i) + ' is an even number')
+  }
+}

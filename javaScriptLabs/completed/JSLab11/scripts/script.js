@@ -47,6 +47,16 @@ while and do while loops.
 for(let number = 1; number<=5; number++){
     console.log(number);
 }
+let number = 1
+while (number<=5) {
+  number++
+  console.log(number)
+}
+
+do{
+  console.log(number)
+  number++
+}while(number<=5)
 
 /*Example 
 We can combine conditional statements 
@@ -65,3 +75,12 @@ for (let j = 1; j<9; j++){
 /*Your turn
 Uses a do-while loop to print only the odd number between
 1 and 9, inclusive. */
+
+let j = 1
+
+do{
+  if (j % 2 === 1){
+    console.log(j)
+  }
+  j++
+}while(j<=9)

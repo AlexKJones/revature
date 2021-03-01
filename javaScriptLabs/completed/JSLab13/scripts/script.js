@@ -15,10 +15,15 @@ outside of the block and before we defined it.*/
 /*Example*/
 if(true){
     let myOtherVariable =20;
+    const alexVariable = 23
+    var alex2Variable = 32
 }
+console.log(alex2Variable)
+console.log(alexVariable)
+
 //This produces an error because it's 
 //outside of the block in which it was defined
-console.log(myOtherVariable);
+// console.log(myOtherVariable);
 
 /*Your turn
 Comment out line 21. 

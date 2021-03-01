@@ -26,6 +26,10 @@ a number that the will cause == to consider the two
 variables equal. 
 Print the result to the console. */ 
 
+b = '13'
+a = 13 
+console.log("13 and '13'", a == b)
+
 /*Example 
 === 
 Comparison operator that compares the type as well as the 
@@ -54,6 +58,9 @@ Compare two numbers using the less than operator.
 Print the result. 
 Compare two strings using the less than operator. 
 */
+let bah = 'bah'
+let humbug = 'humbug'
+console.log('bah<humbug is ' + bah<humbug)
 
 
 /*Example 
@@ -68,7 +75,7 @@ console.log("false || true", solution);
 
 /*Your turn
 Assign solution the result of a and b*/
-
+solution = a && b
 console.log("false && true",solution);
 
 /*Example
@@ -97,6 +104,8 @@ console.log("!(falsy value)", !____);
 
 Fill in the blank with a falsy value that isn't the keyword false.
 */
+
+console.log("!(falsy value)", null)
 
 //Finished! Nice work! Remeber these things for 
 //the conditional blocks lab. 

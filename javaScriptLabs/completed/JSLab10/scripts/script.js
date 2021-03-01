@@ -17,9 +17,9 @@ let input = prompt("Do you like cookies?\n"
                     +"y for yes");//saves the result of the user input in the variable input
 
 if(input ==="y"){
-    console.log("We can be friends");
+    console.log("chocolate chip!!!");
 }else{
-    console.log("It was nice knowing you.");
+    console.log("Who doesn't like cookies!?");
 }
 
 /*Your turn 
@@ -42,6 +42,13 @@ at following the instructions.
 
 Hint: && and || allow you to combine conditional statements
 */
+let strangeNumber = prompt("Give me a number between 13 and 42")
+strangeNumber = Number(strangeNumber)
+if (strangeNumber > 12 && strangeNumber < 43) {
+  console.log('Nice Job!')
+} else {
+  console.log('You really need to learn to follow directions.')
+}
 
 /*Example 
 What if we want to check multiple conditions? 
@@ -73,6 +80,16 @@ than 9 runs. */
  prints the message, “x is less than or equal to 0”. 
  Write an else-statement to prints the message, 
  “x is none of the other options”. */
+ let x = 13
+ if (x === 3) {
+   console.log("x is equal to 3")
+ } else if (x > 5) {
+   console.log('x is greater than 5')
+ } else if (x <= 0) {
+   console.log('x is less than or equal to zero')
+ } else {
+   console.log('x was none of those it was ' + x)
+ }
 
  /*Example 
  We can also 'nest' our if statements within one another. 
@@ -97,3 +114,16 @@ If they say yes. Prompt them to ask if they want sprinkles.
 If they say no to ice cream add another fruit to the array. 
 */
 let array = ["apples","strawberries"];
+let likeIceCream = prompt('Do you like ice cream? Yes or No')
+if (likeIceCream === 'yes' || likeIceCream === 'Yes' || likeIceCream === 'y' || likeIceCream === 'Y'){
+  let sprinkles = prompt('do you like sprinkles? Yes or No')
+  if (sprinkles === 'yes' || sprinkles === 'Yes' || sprinkles === 'y' || sprinkles === 'Y'){
+    array.push('icecreamAndSprinkles')
+  } else {
+    array.push('only icecream')
+  }
+} else {
+  array.push('anotherFruit')
+}
+console.log('array is now:', array)
+

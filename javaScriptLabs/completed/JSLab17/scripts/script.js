@@ -45,6 +45,12 @@ Create an object and assign it properties
 and values using dot notation. 
 Print it out.*/
 
+let banana = new Object();
+banana.color = 'Yellow';
+banana.delicious = true;
+banana.attackType = 'Fruit'
+console.log({banana})
+
 /*Example
 We can also use bracket notation 
 to define and assign values to our properties.
@@ -59,6 +65,9 @@ console.log("New property using bracket notation", obj);
 /*Your turn
 Add a new property to your object using brackets.*/
 
+banana["rotten"] = true;
+console.log({banana})
+
 /*Example
 Defining objects using curly braces. 
 */
@@ -72,3 +81,5 @@ console.log(importantDates);
 /*Your turn 
 Add thanksgiving and the date in the format above
 to the importantDates object.*/
+
+importantDates.thanksgiving = "2019-11-28";

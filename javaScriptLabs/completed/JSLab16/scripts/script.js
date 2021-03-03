@@ -35,6 +35,9 @@ Line 17 tells lines 12-14 to run with a = 1 and b=2.
 Create a function called difference. Return the first parameter 
 minus the second. */
 
+function difference(a, b){
+  return a - b
+}
 
 /*Example 
 Create an anonymous function- one without a name.*/
@@ -56,3 +59,8 @@ It should also execute at least one other instruction of your choosing.
 
 Call your anonymous function. */
 
+let b = function (){
+  console.log('a fun animal fact')
+  alert('this function is anonymous!')
+}
+b()

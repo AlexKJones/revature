@@ -17,6 +17,9 @@ Get the element with the id, "modifyMe".
 Change its html content from Modify me! to 
 a fun animal fact of your choice. */
 
+let animalFact = document.getElementById("modifyMe");
+animalFact.innerHTML = "Giraffes can lick their own ears";
+
 /*Example 
 Get an array of elements by getting them 
 with their tag name. 
@@ -29,7 +32,7 @@ let listItems = document.getElementsByTagName("li");
 for (let i = 0; i<listItems.length; i++){
     let item = listItems[i];
     console.log(item);
-    item.setAttribute("class", "greyText");
+    item.setAttribute("class", "boldText");
 }
 
 /*Explanation
@@ -73,6 +76,11 @@ Create a paragraph element.
 Set its text to say another fun animal fact. 
 Add it to the div referenced by the col variable. */
 
+let p2 = document.createElement("p")
+p.innerHTML = "Another fun Animal Fact"
+col.appendChild(p2)
+document.body.appendChild(row)
+
 /*Your turn 
 Below we get the list of activities and the final li element
 that says Remove Me!. 
@@ -82,6 +90,7 @@ This should remove 4.Remove Me! from the html page.
 */ 
 let activityList = document.getElementById("activityList");
 let removeMe = document.getElementById("removeMe");
+activityList.removeChild(removeMe)
 
 //Hint: for the phrases call on and pass as an argument
 //Read the first explanation again. 
@@ -109,7 +118,15 @@ addName function will run. In the add name function we
 prevent the form from executing an HTTP request. 
 Then we create a header that we add to the inputValues element.*/
 
-
+function addColor(event){
+  event.preventDefault();
+  let color = document.getElementById("colorInput").value
+  let inputColors = document.getElementById("inputValues")
+  let colorElement = document.createElement("h3")
+  colorElement.innerHTML =color
+  inputColors.appendChild(colorElement)
+}
+document.getElementById("formElement2").addEventListener("submit", addColor)
 
 /*Your turn
 Add to the index.html file.

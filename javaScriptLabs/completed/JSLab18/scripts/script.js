@@ -28,6 +28,15 @@ the arguement to call the input function with.
 Then in the function you define call the passed in function
 with the input argument. */ 
 
+function myFunc(b){
+  console.log('this is confusing')
+  b()
+}
+
+myFunc(function(){
+  console.log('like super confusing')
+})
+
 /*Example 
 Constructor functions.*/
 
@@ -67,3 +76,6 @@ Create a player2 variable. Assign it the value of a new Player
 object by calling the constructor defined above. 
 You can give your player whatever name and skill you would like.
 */
+
+let player2 = new Player("Alex", "procrastination ray")
+console.log(player2)

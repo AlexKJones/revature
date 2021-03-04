@@ -3,10 +3,19 @@
     <head>
         <title>Hangman!</title>
         <link rel="stylesheet" href="styles/style.css">
+        <script src= "scripts/script.js"></script>
     </head>
     <body>
-    
+      <form id="guessForm" onsubmit="processGuess(letter)">
+        <input type='text' name="letter" value="A" min="1" max="1" />
+        <input type="submit" />
+      </form>
+      <div id="gallows">
+        <img src="images/strike-0.png">
+      </div>
+      <div id="revealedLetters">
+      </div>
+      <div id="strikeLetters">
+      </div>
     </body>
-	
-	<script src= "scripts/script.js"></script>
 </html>

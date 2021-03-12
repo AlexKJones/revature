@@ -3,8 +3,6 @@ package com.Alex;
 public class TestProductEquality {
 
     public static void main(String[] args) {
-    	String a = "Good morning!";
-    	System.out.println(a.charAt(9));
         Product p1 = new Product(1);
         Product p2 = new Product(1);
         Object o = new Object();

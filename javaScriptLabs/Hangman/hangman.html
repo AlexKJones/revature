@@ -3,19 +3,29 @@
     <head>
         <title>Hangman!</title>
         <link rel="stylesheet" href="styles/style.css">
-        <script src= "scripts/script.js"></script>
+        <style>#gallow {margin-bottom:-300px;}</style>
     </head>
     <body>
-      <form id="guessForm" onsubmit="processGuess()">
-        <input id="letter" type='text' name="letter" value="A" min="1" max="1" />
+      <form id="getInput">
+        <input id="letter" name="letter"/>
         <input type="submit" />
       </form>
+      <div id="guesses">
+        Guesses:
+      </div>
       <div id="gallows">
-        <img src="images/strike-0.png">
+        <img id="gallow" alt="gallowsimg" src="images/strike-0.png">
       </div>
       <div id="revealedLetters">
+        The word is...
+        <h1 id=revLetters>
+        </h1>
       </div>
       <div id="strikeLetters">
+        incorrect guesses: 
+        <h2 id="wrong">
+        </h2>
       </div>
+      <script src= "scripts/script.js"></script>
     </body>
 </html>

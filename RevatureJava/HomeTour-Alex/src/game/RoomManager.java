@@ -72,10 +72,10 @@ public class RoomManager {
 		lr.setRightExit(br);
 		lr.setLeftExit(ps);
 		lr.setNorthExit(ou);
-		Fixture.couch();
-		Fixture.tv();
-		Fixture.aquarium();
-		Fixture.guitar();
+//		Fixture.couch();
+//		Fixture.tv();
+//		Fixture.aquarium();
+//		Fixture.guitar();
 		
 		// bed room exits
 		br.setLeftExit(lr);
@@ -97,10 +97,10 @@ public class RoomManager {
 		// snake room exits
 		sr.setNorthExit(ga);
 		sr.setSouthExit(ki);
-		Fixture.oneSnake();
-		Fixture.twoSnake();
-		Fixture.redSnake();
-		Fixture.blueSnake();
+//		Fixture.oneSnake();
+//		Fixture.twoSnake();
+//		Fixture.redSnake();
+//		Fixture.blueSnake();
 		
 		// garage exits
 		ga.setSouthExit(sr);

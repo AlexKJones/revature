@@ -1,6 +1,5 @@
 package game;
 
-import Fixtures.Fixture;
 import Fixtures.Room;
 
 public class RoomManager {
@@ -12,59 +11,59 @@ public class RoomManager {
 	public void init() {
 		Room lr = new Room(
 			   "Living Room",
-			   "left to pantry space,\nright to a bedroom,\nnorth to the backyard,\nor quit?",
+			   "*left to pantry space,\n*right to a bedroom,\n*north to the backyard,\n*or quit?",
 			   "A nice 80s style sunken living room, complete with loungables and unfinished hobby tools.",
-			   "Inspectable items: \n(just type in item to inspect)");
+			   "\nInspectable items:*guitar *tv *aquarium *couch \n(just type in item to inspect, other commands: stats, inventory)");
 		Room br = new Room(
 				"Bed Room",
-				"left to living room, \nnorth to office, \nor quit?",
-				"Beep",
-				"Inspectable items: \\n(just type in item to inspect)");
+				"*left to living room, \n*north to office, \n*or quit?",
+				"A nice cozy little bedroom with a bed and some fun decorations on it’s shelf’s.",
+				"\nInspectable items:*bed *models *speaker *box \\n(just type in item to inspect, other commands: stats, inventory)");
 		Room ps = new Room(
 				"Open concept Pantry area",
-				"right to living room, \nnorth to kitchen, \nsouth to dining room, \nor quit?",
-				"Beep",
-				"Inspectable items: \\n(just type in item to inspect)");
+				"*right to living room, \n*north to kitchen, \n*south to dining room, \n*or quit?",
+				"An open concept pantry room with open racks containing boxs full of food and ingredients.",
+				"\nInspectable items:*cereal *flour *woodSpoons \\n(just type in item to inspect, other commands: stats, inventory)");
 		Room dr = new Room(
 				"Dining Room",
-				"north to pantry space \nor quit?",
-				"Beep",
-				"Inspectable items: \\n(just type in item to inspect)");
+				"*north to pantry space \n*or quit?",
+				"A small space with a large very nice table and some very expensive barely used plates \nand silverware behind a glass container.",
+				"\nInspectable items:*china *wine *light \\n(just type in item to inspect, other commands: stats, inventory)");
 		Room ki = new Room(
 				"Kitchen",
-				"right to outside, \nnorth to snake room, \nsouth to pantry space, or \nquit?",
-				"Beep",
-				"Inspectable items: \\n(just type in item to inspect)");
+				"*right to outside, \n*north to snake room, \n*south to pantry space, or \n*quit?",
+				"A small kitchen with an island in the middle containing plenty of supplies to cut, \nsauté, cook, or clean anything you could imagine.",
+				"\nInspectable items:*knives *cups *pans \\n(just type in item to inspect, other commands: stats, inventory)");
 		Room sr = new Room(
 				"Snake Room?",
-				"north to garage, \nsouth kitchen, or \nquit?",
-				"Beep",
-				"Inspectable items:oneSnake, twoSnake, redSnake, blueSnake \\n(just type in item to inspect)");
+				"*north to garage, \n*south kitchen, or \n*quit?",
+				"A room full of well, snakes, but they don’t seem to be interested in going anywhere, \nthey mainly seem to keep to themselves.",
+				"\nInspectable items:*oneSnake *twoSnake *redSnake *blueSnake \\n(just type in item to inspect, other commands: stats, inventory)");
 		Room ga = new Room(
 				"Garage",
-				"south to snake room, \nor quit?",
-				"Beep",
-				"Inspectable items: \\n(just type in item to inspect)");
+				"*south to snake room, \n*or quit?",
+				"A one car garage with some exercise equipment and several other unfinished and barely \nstarted hobby supplies.",
+				"\nInspectable items:*car *punchingBag *pile *bike \\n(just type in item to inspect, other commands: stats, inventory)");
 		Room ou = new Room(
 				"Backyard",
-				"left to kitchen, \nright to office, \nsouth to living room, \nor quit?",
-				"Beep",
-				"Inspectable items: \\n(just type in item to inspect)");
+				"*left to kitchen, \n*right to office, \n*south to living room, \n*or quit?",
+				"An open backyard space complete with all the grass you could eat.",
+				"\nInspectable items:*grass *garden *table *swing \\n(just type in item to inspect, other commands: stats, inventory)");
 		Room of = new Room(
 				"Office",
-				"left to backyard, \nnorth to master bedroom, \nsouth to bedroom, \nor quit?",
-				"Beep",
-				"Inspectable items: \\n(just type in item to inspect)");
+				"*left to backyard, \n*north to master bedroom, \n*south to bedroom, \n*or quit?",
+				"A nice office space with one large desk and many other devices used for office type activities.",
+				"\nInspectable items:*computer *printer *papers \\n(just type in item to inspect, other commands: stats, inventory)");
 		Room mb = new Room(
 				"Master BedRoom",
-				"north to bathroom, \nsouth to office, \nor quit?",
-				"Beep",
-				"Inspectable items: \\n(just type in item to inspect)");
+				"*north to bathroom, \n*south to office, \n*or quit?",
+				"A large master bedroom with a much larger bed and some cozy little lamps and wall decorations.",
+				"\nInspectable items:*lamp *gunRack *crate \\n(just type in item to inspect, other commands: stats, inventory)");
 		Room ba = new Room(
 				"Big Bathroom",
-				"south to master bedroom, \nor quit?",
-				"Beep",
-				"Inspectable items: \\n(just type in item to inspect)");
+				"*south to master bedroom, \n*or quit?",
+				"A large bathroom with two closets and a bath. Reminds me of the old days.",
+				"\nInspectable items:*toilet *shower *closetOne *closetTwo \\n(just type in item to inspect, other commands: stats, inventory)");
 		
 		startingRoom = lr;
 		
@@ -72,10 +71,6 @@ public class RoomManager {
 		lr.setRightExit(br);
 		lr.setLeftExit(ps);
 		lr.setNorthExit(ou);
-//		Fixture.couch();
-//		Fixture.tv();
-//		Fixture.aquarium();
-//		Fixture.guitar();
 		
 		// bed room exits
 		br.setLeftExit(lr);
@@ -97,10 +92,6 @@ public class RoomManager {
 		// snake room exits
 		sr.setNorthExit(ga);
 		sr.setSouthExit(ki);
-//		Fixture.oneSnake();
-//		Fixture.twoSnake();
-//		Fixture.redSnake();
-//		Fixture.blueSnake();
 		
 		// garage exits
 		ga.setSouthExit(sr);

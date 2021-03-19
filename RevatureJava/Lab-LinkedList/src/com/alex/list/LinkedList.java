@@ -1,6 +1,8 @@
 package com.alex.list;
 
-public class LinkedList {
+import java.util.List;
+
+public class LinkedList implements List<Integer>{
 Node head;
     
     public void add(Integer data) {

@@ -2,7 +2,7 @@ package com.alex.list;
 
 import java.util.List;
 
-public class LinkedList implements List<Integer>{
+public class LinkedList {
 Node head;
     
     public void add(Integer data) {
@@ -15,7 +15,7 @@ Node head;
     		head = node;
     	}else {
     		Node runner = head;
-    		while(runner.getNext != null) {
+    		while(runner.getNext() != null) {
     			runner = runner.getNext();
     		}
     		runner.setNext(node);
